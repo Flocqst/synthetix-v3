@@ -50,13 +50,17 @@ git checkout dev
 
 3. Run `yarn` at the root directory: `/synthetix-v3`.
 4. Run `yarn compile-contracts` at the root directory: `/synthetix-v3`.
+
    4.1 In case you get the following error :
+
    ```bash
    Error: Cannot find module '/synthetix-v3/node_modules/@synthetixio/hardhat-storage/dist/index.js'.
    ```
+
    Run `yarn build` at the `/synthetix-v3/utils/core-utils/` directory.
    Run `yarn build` at the `/synthetix-v3/utils/hardhat-storage/` directory.
    Run `yarn` at the root directory: `/synthetix-v3`.
+
 5. Run `yarn generate-testable` at the root directory: `/synthetix-v3`.
 6. Run `yarn build-testable` at the root directory: `/synthetix-v3`.
 7. Jump into the `perps-market` directory: `cd markets/perps-market`
